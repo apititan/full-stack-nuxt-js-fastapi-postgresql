@@ -4,7 +4,7 @@ WORKDIR /app/
 
 # Install Poetry
 
-RRUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python3
+RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python3
 ENV PATH="/opt/poetry/bin:$PATH"
 RUN poetry config virtualenvs.create false
 
